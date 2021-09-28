@@ -42,6 +42,7 @@ class BlockShuffleDataLoader(DataLoader):
 
     @staticmethod
     def block_shuffle(data, batch_size, sort_bs_num, sort_key, is_shuffle):
+        random.shuffle(data)
         # 将数据按照batch_size大小进行切分
         tail_data = [] if len(data) % batch_size == 0 else data[-len(data) % batch_size:]
         data = data[:len(data) - len(tail_data)]
