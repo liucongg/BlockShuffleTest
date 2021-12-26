@@ -1,10 +1,8 @@
 # -*- coding:utf-8 -*-
-# @project: TestCode
-# @filename: BlockShuffleTest
-# @author: 刘聪NLP
-# @zhihu: https://www.zhihu.com/people/LiuCongNLP
-# @contact: logcongcong@gmail.com
-# @time: 2021/9/27 10:46
+# @project: BlockShuffleTest
+# @filename: train
+# @author: swift
+# @source: https://github.com/liucongg/BlockShuffleTest
 """
     文件说明:
             
