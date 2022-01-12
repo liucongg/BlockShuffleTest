@@ -39,8 +39,8 @@ def evaluate(model, device, dev_data, args):
     iter_bar = tqdm(test_data_loader, desc="iter", disable=False)
     true_label = []
     pre_label = []
+    model.eval()
     for step, batch in enumerate(iter_bar):
-        model.eval()
         with torch.no_grad():
             input_ids = batch["input_ids"].to(device)
             attention_mask = batch["attention_mask"].to(device)
